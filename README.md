@@ -12,7 +12,7 @@ Software engineer in Berlin. Most of my recent work is on language bindings and 
 
 ### Projects
 
-**[geothermal-thermo-hydraulic-model](https://github.com/ldocallaghan/geothermal-thermo-hydraulic-model)**
+**[BoreTHM](https://github.com/ldocallaghan/BoreTHM)**
 
 Coupled physical models in Python that test one approach to drilling geothermal wells into superhot rock (400 °C and above). Cold fluid is pumped down an insulated pipe to the bit, where it keeps the tools below their survival limit and quenches the rock face, and returns up the annulus. Water properties come from IAPWS-95, and the models are one-dimensional or axisymmetric and mostly steady-state.
 
