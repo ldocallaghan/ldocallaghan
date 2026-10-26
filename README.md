@@ -4,13 +4,13 @@ Research software engineer in Berlin, working on the drilling of geothermal well
 
 ### BoreTHM
 
-Rock at 400 °C and above can yield several times more energy per well than conventional geothermal resources, but drilling into it raises two problems at once. Most downhole electronics are rated to 200 °C or less, and the borehole wall breaks out under the stresses at depth. Circulating cold fluid addresses the first and changes the second, since cooling the wall alters the stresses around it, and the fluid weight needed to support the wall also sets the pressures and flow that govern cooling. The two have to be designed together.
+Rock at 400 °C and above can yield several times more energy per well than conventional geothermal resources. Drilling into it is limited by the temperature of the downhole tools, most of which are rated to 200 °C or less, and by the stability of the borehole wall. Cold drilling fluid circulated down the pipe lowers the tool temperature. It also cools the wall, which changes the stresses around the hole, and the fluid density needed to keep the wall stable affects the circulating pressures and flow. The temperature and stability calculations therefore depend on each other.
 
-[BoreTHM](https://github.com/ldocallaghan/BoreTHM) is an open-source set of models for doing that at a given site. It follows fluid and rock temperatures through drilling, connections and trips, and checks at each depth whether the tools stay within their limits and whether some fluid density keeps the wall stable without fracturing the formation. Changing the pipe insulation, flow rate, casing depth or fluid densities shows which limits a design meets and where it fails.
+[BoreTHM](https://github.com/ldocallaghan/BoreTHM) is an open-source set of models that solves them together for a given site and drilling programme. It calculates fluid and rock temperatures through drilling, connections and trips, and checks at each depth whether the tools stay below their temperature limit and whether a fluid density exists that keeps the wall stable without fracturing the formation. A separate design study changes one part of the programme at a time, such as the casing depth, the drill pipe insulation, the mud viscosity or the flow rate, and records which checks each version passes.
 
-The circulation model has been compared with drilling data from Utah FORGE well 16B: fitted on the other runs, it predicted the run with partly insulated pipe to within 2 to 4 °C. Rock strength is calibrated on the breakouts logged in UD-1 at United Downs and checked against the Soultz wells.
+The circulation model has been compared with drilling data from Utah FORGE well 16B. With its parameters fitted on the other runs, it predicted the run with partly insulated pipe to within 2 to 4 °C. Rock strength is calibrated on the breakouts logged in UD-1 at United Downs and checked against the Soultz wells.
 
-v1.5.0, Apache-2.0, DOI [10.5281/zenodo.23549104](https://doi.org/10.5281/zenodo.23549104).
+Apache-2.0, DOI [10.5281/zenodo.23549104](https://doi.org/10.5281/zenodo.23549104).
 
 ### Open source, 2026
 
