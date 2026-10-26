@@ -1,6 +1,16 @@
 ### Liam O'Callaghan
 
-Software engineer in Berlin. Most of my recent work is on language bindings and numerical models.
+Research software engineer in Berlin, working on the drilling of geothermal wells in superhot rock.
+
+### BoreTHM
+
+Rock at 400 °C and above can yield several times more energy per well than conventional geothermal resources, but drilling into it raises two problems at once. Most downhole electronics are rated to 200 °C or less, and the borehole wall breaks out under the stresses at depth. Circulating cold fluid addresses the first and changes the second, since cooling the wall alters the stresses around it, and the fluid weight needed to support the wall also sets the pressures and flow that govern cooling. The two have to be designed together.
+
+[BoreTHM](https://github.com/ldocallaghan/BoreTHM) is an open-source set of models for doing that at a given site. It follows fluid and rock temperatures through drilling, connections and trips, and checks at each depth whether the tools stay within their limits and whether some fluid density keeps the wall stable without fracturing the formation. Changing the pipe insulation, flow rate, casing depth or fluid densities shows which limits a design meets and where it fails.
+
+The circulation model has been compared with drilling data from Utah FORGE well 16B: fitted on the other runs, it predicted the run with partly insulated pipe to within 2 to 4 °C. Rock strength is calibrated on the breakouts logged in UD-1 at United Downs and checked against the Soultz wells.
+
+v1.5.0, Apache-2.0, DOI [10.5281/zenodo.23549104](https://doi.org/10.5281/zenodo.23549104).
 
 ### Open source, 2026
 
@@ -10,13 +20,7 @@ Software engineer in Berlin. Most of my recent work is on language bindings and 
 - **[Prisma, documentation site](https://github.com/prisma/web).** Their Cloudflare deployment guide had regressed to a deprecated setting during a documentation migration. Traced it to the commit that lost the original fix and restored it.
 - **[Qdrant Edge, Node.js bindings](https://github.com/qdrant/qdrant/issues/10226).** Built and demonstrated end to end: shard creation, write, read, close, and reopen from disk. Awaiting a decision from the maintainers on which language bindings belong in the core repository.
 
-### Projects
-
-**[BoreTHM](https://github.com/ldocallaghan/BoreTHM)**
-
-Coupled physical models in Python that test one approach to drilling geothermal wells into superhot rock (400 °C and above). Cold fluid is pumped down an insulated pipe to the bit, where it keeps the tools below their survival limit and quenches the rock face, and returns up the annulus. Water properties come from IAPWS-95, and the models are one-dimensional or axisymmetric and mostly steady-state.
-
-The borehole-stability model is calibrated against the breakouts logged in the UD-1 well at United Downs and checked against the GPK wells at Soultz-sous-Forêts, where it places the onset of breakouts within a few hundred metres of the logs. At both sites a 400 °C hole holds with drilling fluid barely heavier than water, but only because the circulating fluid cools the wall. Without that cooling, the weight needed comes within 3% of the fracture limit. A single closed loop at Soultz recovers around 4 MW of heat, returning at 137 °C, so the cold loop answers the drilling problem and leaves production as the open question.
+### Other projects
 
 **[Langsammm](https://github.com/ldocallaghan/Langsammm)**
 
