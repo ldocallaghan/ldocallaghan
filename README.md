@@ -12,13 +12,11 @@ The circulation model has been compared with drilling data from Utah FORGE well 
 
 Apache-2.0, DOI [10.5281/zenodo.23549104](https://doi.org/10.5281/zenodo.23549104).
 
-### Open source, 2026
+### Open source contributions
 
-- **[Mozilla, UniFFI bindings generator](https://github.com/mozilla/uniffi-rs/pull/2966).** UniFFI generates the bindings that let Firefox ship one Rust codebase to both Android and iOS. Fixed a code generation fault in the Kotlin and Swift backends that emitted source which would not compile, closing [an issue open since January 2025](https://github.com/mozilla/uniffi-rs/issues/2411).
-- **[Qdrant, core repo](https://github.com/qdrant/qdrant/pull/10209).** A vector database with 34,000 stars, run as infrastructure under AI search and retrieval products. Fixed a build failure that stopped the project compiling at all on RISC-V, s390x and WebAssembly.
-- **[uniffi-bindgen-react-native](https://github.com/jhugman/uniffi-bindgen-react-native/pull/438).** UniFFI carried to TypeScript for React Native, Node and the browser, funded by Mozilla, LiveKit and Filament. Fixed the same class of fault in the TypeScript generator, found while generating bindings that produced a 12,000-line TypeScript file.
-- **[Prisma, documentation site](https://github.com/prisma/web).** Their Cloudflare deployment guide had regressed to a deprecated setting during a documentation migration. Traced it to the commit that lost the original fix and restored it.
-- **[Qdrant Edge, Node.js bindings](https://github.com/qdrant/qdrant/issues/10226).** Built and demonstrated end to end: shard creation, write, read, close, and reopen from disk. Awaiting a decision from the maintainers on which language bindings belong in the core repository.
+- **[Mozilla, UniFFI bindings generator](https://github.com/mozilla/uniffi-rs/pull/2966).** Fixed a code generation fault in the Kotlin and Swift backends that emitted source which would not compile, closing [#2411](https://github.com/mozilla/uniffi-rs/issues/2411).
+- **[Qdrant, core repo](https://github.com/qdrant/qdrant/pull/10209).** Fixed a build failure that stopped the project compiling at all on RISC-V, s390x and WebAssembly.
+- **[uniffi-bindgen-react-native](https://github.com/jhugman/uniffi-bindgen-react-native/pull/438).** Fixed the same class of fault in the TypeScript generator, found while generating bindings that produced a 12,000-line TypeScript file.
 
 ### Other projects
 
