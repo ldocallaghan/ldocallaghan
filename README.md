@@ -1,6 +1,6 @@
 ### Liam O'Callaghan
 
-Research software engineer in Berlin, working on the drilling of geothermal wells in superhot rock.
+Research software engineer in Berlin.
 
 ### BoreTHM
 
