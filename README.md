@@ -17,7 +17,7 @@ Apache-2.0, on PyPI as `borethm`, DOI [10.5281/zenodo.23549104](https://doi.org/
 - **[Mozilla, UniFFI bindings generator](https://github.com/mozilla/uniffi-rs/pull/2966).** Fixed a code generation fault in the Kotlin and Swift backends that emitted source which would not compile, closing [#2411](https://github.com/mozilla/uniffi-rs/issues/2411).
 - **[Qdrant, core repo](https://github.com/qdrant/qdrant/pull/10209).** Fixed a build failure that stopped the project compiling at all on RISC-V, s390x and WebAssembly.
 - **[uniffi-bindgen-react-native](https://github.com/jhugman/uniffi-bindgen-react-native/pull/438).** Fixed the same class of fault in the TypeScript generator, found while generating bindings that produced a 12,000-line TypeScript file.
-- **[PyPSA-Eur, European energy system model](https://github.com/PyPSA/pypsa-eur/pull/2414).** Fixed a constraint that meant flexible geothermal reservoirs never got any capacity, closing [#2413](https://github.com/PyPSA/pypsa-eur/issues/2413). Reported a second fault in the same code, [#2415](https://github.com/PyPSA/pypsa-eur/issues/2415), which the maintainers fixed the next day.
+- **[PyPSA-Eur, European energy system model](https://github.com/PyPSA/pypsa-eur/pull/2414).** Fixed a constraint that meant flexible geothermal reservoirs never got any capacity, closing [#2413](https://github.com/PyPSA/pypsa-eur/issues/2413). Reported a second fault in the same code, [#2415](https://github.com/PyPSA/pypsa-eur/issues/2415).
 
 ### Other projects
 
